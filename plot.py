@@ -4,7 +4,7 @@ import networkx as nx
 
 def plotTSP(sol, points):
     '''
-        Função para plotar o gráfico do TSP
+    Função para plotar o gráfico do TSP
     '''
     x = []; y = []
     for i in sol:
