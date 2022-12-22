@@ -60,7 +60,7 @@ for j in range(n):
         d[j].append(dist)
 
 def addConstraints(model, X, u):
-     # Essa constraint garante que exista uma viagem de chegada para cada ponto focal
+    # Essa constraint garante que exista uma viagem de chegada para cada ponto focal
     model.addConstrs(sum(X[j,i] for i in range(n)) == 1 for j in range(n))
 
     # Essa constraint garante que exista uma viagem saindo de cada ponto focal
